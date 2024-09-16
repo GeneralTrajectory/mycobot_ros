@@ -1,7 +1,7 @@
 version: '3.4'
 
 x-app: &common
-  command: [ "roslaunch ${LAUNCH_TARGET:-mycobot_280 slider_control.launch}" ]
+  command: [ "roslaunch ${LAUNCH_TARGET:-myarm_m slider_control_gripper.launch}" ]
   privileged: true
   environment:
     PYTHONUNBUFFERED: 1
