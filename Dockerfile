@@ -45,6 +45,8 @@ COPY . mycobot_ros
 
 USER root
 WORKDIR /home/er/catkin_ws/src
+# Ensure that the package lists are up-to-date
+RUN apt-get update
 RUN rosdep install -r -y -i --from-paths .
 
 USER er
